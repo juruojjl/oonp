@@ -1,24 +1,82 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>jjlの小网站</title>
-</head>
-<body>
-  <script type="text/javascript">
-    function rel(){
-      alert(OK，jjl知道啦~);
-      document.body.innerHTML="";
-      window.location.reload();
+  <title>jjlの小网站</title>
+  <style type="text/css">
+    body{
+      background-repeat: 0;
     }
-  </script>
-  你是从哪里来到本站的?
-  <br>
-  Bilibili:<input type="checkbox" name="Bilibili">
-  <br>
-  jjl的博客:<input type="checkbox" name="jijialijuruo.github.io">
-  <br>
-	<a href="https://juruojjl.github.io"><button onclick="rel()">继续</button></a>
-  cswb
-</body>
+    .app-bg{    
+    z-index: -999;
+    height: 100px;
+    filter: alpha(opacity=10);  
+    -moz-opacity: 0.1;  
+    -ms-opacity: 0.1;  
+    -webkit-opacity: 0.1;  
+    -o-opacity: 0.1;  
+    opacity: 0.1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: url(/img/background.jpg) ;
+    background-size: 100% 100%;
+    background-attachment: fixed;
+}
+  .sidebar{
 
+  }
+  .drop{
+    position: relative;
+    display: table;
+  }
+  .dropdown{
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 12px 16px;
+  }
+  .dropdown:hover .dropdown-content{
+    display: block;
+  }
+  ul
+  {
+  list-style-type:none;
+  margin:0;
+  padding:0;
+  overflow:hidden;
+  }
+  li
+  {
+  float:left;
+  }
+  a:link,a:visited
+  {
+  display:block;
+  width:120px;
+  font-weight:bold;
+  color:#FFFFFF;
+  background-color:#bebebe;
+  text-align:center;
+  padding:4px;
+  text-decoration:none;
+  text-transform:uppercase;
+  }
+  a:hover,a:active
+  {
+  background-color:#cc0000;
+  }
+
+  </style>
+</head>
+<body background="https://juruojjl.github.io/img/e1f84d24f8c25e81edf1d0a3e1099dd2.jpg">
+  <noscript>此处应该给个链接?<br>如何开启js服务</noscript>
+  <center>
+    <b>欢迎来到本站！</b>
+    <br>
+
+  </center>
+</body>
 </html>
