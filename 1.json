@@ -122,6 +122,8 @@
 "bossName_sonic": "一扶苏一",
 "bossName_yuri": "尤里",
 "sklYuriControl": "[0]使用[心灵控制]",
+"bossName_dalao": "大佬",
+"sklFAKE": "[0]装弱，迷惑了[1]，[1]rp减少[2]点",
 "endMessage": "你已经玩了[0]局了",
 "continueGame": "继续游戏",
 "navigationLink": "navigation.html",
