@@ -3,4 +3,9 @@
       unescape(encodeURIComponent(names))
    ).replace(/\+/g,'-').replace(/\//g,'_');
    iframe.src = 'http://namerena.github.io/#n=' + base64;
+}function run(names){
+   var base64 = window.btoa(
+      unescape(encodeURIComponent(names))
+   ).replace(/\+/g,'-').replace(/\//g,'_');
+   iframe.src = 'http://namerena.github.io/#n=' + base64;
 }</script>
