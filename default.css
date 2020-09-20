@@ -50,3 +50,19 @@ button:disabled{
 	background: gray !important;
 	cursor: not-allowed;
 }
+a:link{
+	color: #000000;
+	text-decoration: none;
+}
+a:active{
+	color: #000000;
+	text-decoration: blink;
+}
+a:hover{
+	color: orange;
+	text-decoration: underline;
+}
+a:visited{
+	text-decoration: none;
+	color: orange;
+}
