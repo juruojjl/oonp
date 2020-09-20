@@ -1,0 +1,52 @@
+h1{
+	margin: 20px;
+	padding: 10px;
+	background-color: #eafe51;
+}
+h2{
+	margin: 20px;
+	padding: 8px;
+	background-color: #dd99cd;
+}
+h3{
+	margin: 20px;
+	padding: 6px;
+	background-color: #99eeef;
+}
+h4{
+	margin: 20px;
+	padding: 4px;
+	background-color: #00ff00;
+}
+h5{
+	margin: 20px;
+	padding: 2px;
+	background-color: #7f57fa;
+}
+h6{
+	margin: 20px;
+	padding: 1px;
+	background-color: #ff67ff;
+}
+code{
+	font-family:"Consolas";
+}
+button{
+	border: none;
+	border-radius: 3px;
+	background: #ffccff;
+	font-family: "Consolas";
+	padding: 4px 8px;
+	line-height: 18px;
+}
+button:hover{
+	background: #ff99ff;
+}
+button:active{
+	background: #ff00ff;
+}
+button:disabled{
+	border: 1px rgba(0,0,0,0) solid;
+	background: gray !important;
+	cursor: not-allowed;
+}
