@@ -66,3 +66,10 @@ a:visited{
 	text-decoration: none;
 	color: orange;
 }
+textarea{
+	background-image: url("favicon.ico");
+	width: 120px;
+	height: 120px;
+	opacity: 0.8;
+	font-family: "Consolas";
+}
