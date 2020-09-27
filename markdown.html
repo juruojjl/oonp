@@ -20,14 +20,13 @@
  document.getElementById("code").innerHTML = html;
 }
 	</script>
-	<textarea id="content"></textarea>
+	<textarea id="content" onkeyup="compile()" style="width: 600px;height: 480px;"></textarea>
 	<br>
 	在上面输入您的<b>Markdown</b>代码
 	<br>
-	<button onclick="compile()">确认</button>
 	<div id="result">
 		在此处输出结果
 	</div>
-	<textarea id="code"></textarea>
+	<textarea id="code" style="width: 600px;height: 480px;"></textarea>
 </body>
 </html>
