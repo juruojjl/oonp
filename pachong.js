@@ -1,0 +1,1 @@
+alert("<div>"'签名：'+ _feInstance.currentUser.slogan+"<br>名字："+_feInstance.currentUser.name+"<br>ID："+_feInstance.currentUser.uid+"<br>头像：<img src=\"https://cdn.luogu.com.cn/upload/usericon/"+_feInstance.currentUser.uid+".png\"></div>")
