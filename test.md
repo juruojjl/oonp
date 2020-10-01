@@ -2,6 +2,7 @@ title: test
 speaker: jjl
 plugins:
     - echarts
+js: - https://echarts.cdn.apache.org/zh/asset/theme/infographic.js
 
 <slide class="bg-black-blue aligncenter">
 
@@ -18,7 +19,7 @@ By jjl {.text-intro}
 <slide class="bg-black-blue">
 
 <script type="text/javascript">
-var	option = {
+{
     xAxis: {
         type: 'category',
         data: ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun']
