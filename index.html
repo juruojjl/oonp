@@ -73,32 +73,46 @@
   background-color:#cc00ff;
   opacity: 1;
   }
-
+  div{
+    font-size: 32px;
+    text-align: center;
+    text-decoration-color: green-blue;
+  }
   </style>
 </head>
 <body>
   <!--background="https://juruojjl.github.io/img/e1f84d24f8c25e81edf1d0a3e1099dd2.jpg"--->
   <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML"></script>
   <a href="/billboard">留言板</a> <a href="/blog/index.html">jjl的博客</a> <a href="/code">jjl的代码</a> <a href="/assignment.html">协议</a> <a href="/games/game.html">jjl写的游戏</a> <a href="/webcss.html">网站使用的css</a> <a href="/essay.html">至理名言（</a> <a href="/markdown.html">Markdown预览</a> <a href="/cannot-be-done.html">不可做题集（</a><h1>欢迎来到本站</h1><script src="//code.tidio.co/sv5kivimjxvrpdvvsvvhpe2d1xwij3c1.js" async></script>
-<script>
-var _hmt = _hmt || [];
-(function() {
-  var hm = document.createElement("script");
-  hm.src = "https://hm.baidu.com/hm.js?7f184208372cf4ecb40352e2445a6f06";
-  var s = document.getElementsByTagName("script")[0]; 
-  s.parentNode.insertBefore(hm, s);
-})();
-</script>
   <noscript>此处应该给个链接?<br>如何开启js服务</noscript>
-  <footer>
-    <span id="busuanzi_container_site_pv">
-    本站总访问量<span id="busuanzi_value_site_pv"></span>次
-</span>
-
-
-<span id="busuanzi_container_site_uv">
-  本站访客数<span id="busuanzi_value_site_uv"></span>人次
-</span>
-  </footer>
+  <div id="date"></div>
+    <script type="text/javascript">
+      function getdate()
+      {
+        
+        var tm=new Date();
+        var year=tm.getFullYear();
+        var month=tm.getMonth()+1;
+        var day=tm.getDate();
+        var hour=tm.getHours();
+        var minute=tm.getMinutes();
+        var seconds=tm.getSeconds();
+        var weekday;
+        switch(tm.getDay())
+        {
+          case 0:weekday="星期日";break;
+          case 1:weekday="星期一";break;
+          case 2:weekday="星期二";break;
+          case 3:weekday="星期三";break;
+          case 4:weekday="星期四";break;
+          case 5:weekday="星期五";break;
+          case 6:weekday="星期六";break;
+        }
+        document.getElementById('date').innerHTML="现在是"+year+"年"+month+"月"+day+"日"+hour+"时"+minute+"分"+seconds+"秒"+weekday;
+        setTimeout(getdate,1000);
+      }getdate();
+    </script>
+    <a href="https://info.flagcounter.com/NTLl"><img src="https://s04.flagcounter.com/countxl/NTLl/bg_B3FFE0/txt_636363/border_FFFFFF/columns_8/maxflags_250/viewers_juruojjl.github.io+visitors/labels_1/pageviews_1/flags_0/percent_0/" alt="Flag Counter" border="0"></a>
+    <footer>©2019~2020,jjl studio,all right reserved.</footer>
 </body>
 </html>
