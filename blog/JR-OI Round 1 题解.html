@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>JR-OI Round 1 题解</title>
+	<link rel="stylesheet" type="text/css" href="https://juruojjl.github.io/default.css">
+	<link rel="stylesheet" type="text/css" href="blog.css">
+</head>
+<body>
+	<script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+	<h1>JR-OI Round 1 题解</h1>
+	<h3>时间：2020/10/3 20:39</h3>
+	<h3>标签：<a href="/solution/index.html">题解</a></h3>
+<h1 id="t1">T1</h1>
+<p>关于这题，有一个公式叫：</p>
+$$\log_{10}(2)*n$$
+<p>此题完结。</p>
+<h1 id="t2">T2</h1>
+<p>简单的暴力题。</p>
+<h1 id="t3">T3</h1>
+<p>一道复杂的模拟题。</p>
+<pre><code class="cpp language-cpp">
+	while(len1<=len2)
+        if(curlen[len1]>=0&&curlen[len2]&lt;=100000)//数组标记
+        {
+            if(curlen[len1]&lt;k)//如果老妈在津津左边
+            {
+                if(!visit[curlen[len1]*2]&&curlen[len1]*2&lt;=100000)//如果没有移动过且移动到2X不越界
+                {
+                    curlen[++len2]=curlen[len1]*2;//移动到2X
+                    visit[curlen[len2]]=visit[curlen[len1]]+1;//被visit了
+                    if(curlen[len2]==k)//如果抓到了
+                    {
+                        cout&lt;&lt;visit[curlen[len2]];//津津被KO力
+                        break;
+                    }
+                }
+                if(!visit[curlen[len1]+1])
+                {
+                    curlen[++len2]=curlen[len1]+1;
+                    visit[curlen[len2]]=visit[curlen[len1]]+1;
+                    if(curlen[len2]==k)
+                    {
+                        cout&lt;&lt;visit[curlen[len2]];
+                        break;
+                    }
+                }
+                if(!visit[curlen[len1]-1])
+                {
+                    curlen[++len2]=curlen[len1]-1;
+                    visit[curlen[len2]]=visit[curlen[len1]]+1;
+                    if(curlen[len2]==k)
+                    {
+                        cout&lt;&lt;visit[curlen[len2]];
+                        break;
+                    }
+                }
+            }
+            else if(curlen[len1]>k)
+            {
+                if(!visit[curlen[len1]-1])
+                {
+                    curlen[++len2]=curlen[len1]-1;
+                    visit[curlen[len2]]=visit[curlen[len1]]+1;
+                    if(curlen[len2]==k)
+                    {
+                        cout&lt;&lt;visit[curlen[len2]];
+                        break;
+                    }
+                }
+            }
+            len1++;
+        }
+</code></pre>
+<h1 id="t4">T4</h1>
+<p>这题是本团的第一道题！</p>
+<p>这题虽然不难，但是要卡常</p>
+<pre><code class="cpp language-cpp">
+while(lv!=15&&ju&lt;500)
+{
+    n=((n+2803)*547)%7717;
+    //cout&lt;&lt;lv&lt;&lt;endl;调试代码
+    if(n%2==0)
+    {
+        if(lv!=1) lv--;//特判，防止越界
+        ans+=lv;
+    }
+    else lv++,ans+=lv;
+    ju++;
+}
+</code></pre>
+<p>哦对了记得卡常（</p>
+<h1 id="t5">T5</h1>
+<p>一道毫无思维含量的板子</p>
+<pre><code class="python language-python">def fastPow(b,e): #快速幂模板
+    ans=1
+    while e!=0:
+        if e&1:
+            ans*=b
+        e>>=1
+        b*=b
+    return ans
+print(fastPow(int(input()),int(input())))
+</code></pre>
+<p>有人交C++高精，然后发现炸了</p>
+<h1 id="t6">T6</h1>
+<p>一道dfs经典题。</p>
+<p>不过数据似乎氵了点</p>
+<pre><code class="cpp language-cpp">void dfs(string s,int sum)
+{
+    if(sum==n)
+    {
+        ans++;
+        Ans[ans]=s;
+        return;
+    }
+    for(int i=1;i<=26;i++)
+    {
+        if(i+sum>n) break;
+        dfs(s+char(97+i-1),sum+i);
+    }
+    return;
+}
+</code></pre>
+<p>end.</p>
+</body>
+</html>
