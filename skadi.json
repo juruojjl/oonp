@@ -23,7 +23,7 @@
 "sklCurseDamage": "[酩酊大醉]使伤害加倍",
 "sklCurseEnd": "[1][酒精]没了",
 "sklCurseHit": "[1][醉]了",
-"sklCurse": "[0][的白开水被灌了酒精]",
+"sklCurse": "[0]让[1][的白开水被灌了酒精]",
 "sklDisperse": "[0][往][1][瓶子里放了核废水]",
 "sklExchange": "[0][理智互换]",
 "sklExchanged": "[1]的理智与[0]互换",
